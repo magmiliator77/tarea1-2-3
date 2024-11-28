@@ -1,0 +1,318 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+    overflow-x: hidden;
+
+}
+
+body{
+
+    overflow-y: hidden;
+
+}
+
+
+
+
+/* NAV */
+
+nav{
+
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    /* background-color: red; */
+
+}
+
+nav h1{
+    
+    font-size: 40px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: #e5af88;
+    
+   margin-left: 20px;
+
+}
+
+
+nav #Buscador{
+    
+    height: 20px;
+    
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    
+    background-color: #2646a0;
+
+}
+
+header a{
+
+    color: rgb(83, 83, 235);
+    margin-left: 10px;
+
+}
+
+/* CONTENT */
+
+.content{
+
+    display: grid;
+    
+    grid-template-areas: 
+                         "aside content span"
+                         "aside content span";
+  
+    grid-template-columns: 300px 2fr 1fr;
+
+
+
+
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: auto; /*! --> Altura del viewport dinamica*/
+
+    overflow-y: hidden;
+
+    /* background-color: rebeccapurple; */
+
+}
+
+
+/* ASIDE */
+
+.aside1{
+
+    width: 200px;
+    height: 310px;
+    
+    padding: 10px;
+    
+    
+    border: 2px solid rgb(85, 85, 85);
+
+
+    background-color: #cbc5c5db;
+
+    overflow-y: hidden;
+
+}
+
+.aside2{
+
+
+    grid-row: 2;
+    
+    
+
+    width: 200px;
+    height: 300px;
+    
+    padding: 10px;
+    
+    
+    border: 2px dashed #ff5e00;
+
+    
+    background-color: #f6df7c;
+
+    overflow-y: hidden;
+
+}
+
+.aside2 h3{
+
+    height: auto;   
+
+}
+
+/* ARTICLES */
+
+article{
+
+    width: 100%;
+    height: auto;
+
+    
+
+}
+
+article .box-article{
+
+    width: 100px;
+    height: 100px;
+
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+    background-color: #8b2119;
+
+}
+
+#article1{
+
+    min-width: 350px;
+    max-width: 500px;    
+
+}
+
+
+#article2{
+
+    grid-row: 2;
+    max-width: 500px;    
+    min-width: 350px;
+    
+}
+
+
+
+/* SPAN DERECHA */
+
+.span{
+
+
+
+    width: 150px;
+    height: 320px;
+
+    padding: 10px;
+   
+
+    grid-column: 3;
+  
+    border: 2px solid #db905c;
+    border-bottom: 0px solid white;
+
+    overflow-y: hidden;
+  
+
+}
+
+.span h2{
+
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #ce671d;
+
+}
+
+.span-container{
+
+    display: flex;
+    justify-content: right;
+
+    margin-right: 20px;
+
+}
+
+.span2 h2{
+
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #ce671d;
+
+ 
+
+}
+
+
+.span2{
+
+
+
+    width: 150px;
+    height: 270px;
+    padding: 10px;
+    padding-top: 0px;
+
+    grid-column: 3;
+  
+    border: 2px solid #db905c;
+    border-top: 0px solid white;
+
+    overflow-y: hidden;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 53px;
+    margin-top: 20px;
+
+    border: 1px solid gray;
+    background-color: #bab4b4;
+
+}
+
+footer .footer-links{
+
+    overflow-y: hidden;
+
+}
+
+footer .footer-links a{
+    
+    padding: 5px;
+
+    border-right: 1px solid black;
+
+}
+
+footer .footer-links a:last-child{
+
+    border-right: none;
+
+}
+
+footer .copy{
+
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+
+
+
+
+
